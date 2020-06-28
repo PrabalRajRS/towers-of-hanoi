@@ -7,4 +7,5 @@ rules:
 top of another stack i.e. a disk can only be moved if it is the uppermost disk on a stack.
 3) No disk may be placed on top of a smaller disk.
 
-https://towers-of-hanoi.netlify.app/
+[https://towers-of-hanoi.netlify.app/] (url)
+
