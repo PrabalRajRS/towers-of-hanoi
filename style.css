@@ -1,0 +1,107 @@
+body {
+    padding-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #07570e;
+    font-weight: 400;
+    margin-top: -3em;
+    background-color:burlywood
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-top:25%;
+}
+
+.row {
+    text-align: center;
+}
+
+.towers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    border-bottom: 9px solid #0c0101;
+    margin: -65px 0 0 -187px;
+    width: 374px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+}
+
+.container {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 32%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #2b2828;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.disk {
+    position: relative;
+    display: block;
+    height: 12px;
+    box-sizing: border-box;
+    bottom: 0px;
+}
+
+.disk-1 {
+    margin-left: 40%;
+    width: 20%;
+    background-image: linear-gradient(to right,rgb(89, 41, 151), rgb(248, 248, 245),rgb(89, 41, 151));
+    border-radius:20%;
+}
+
+.disk-2 {
+    margin-left: 32%;
+    width: 36%;
+    background-image: linear-gradient(to right,rgb(126, 33, 33), rgb(175, 200, 221),rgb(126, 33, 33));
+    border-radius:20%;
+}
+
+.disk-3 {
+    margin-left: 24%;
+    width: 52%;
+    background-image: linear-gradient(to right,rgb(35, 49, 129), rgb(77, 76, 76),rgb(35, 49, 129));
+    border-radius:20%;
+}
+
+.disk-4 {
+    margin-left: 16%;
+    width: 68%;
+    background-image: linear-gradient(to right,rgb(136, 21, 101), rgb(233, 225, 123),rgb(136, 21, 101));
+    border-radius:20%;
+}
+
+.disk-5 {
+    margin-left: 8%;
+    width: 84%;
+    background-image: linear-gradient(to right,rgb(252, 8, 8), rgb(66, 57, 64),rgb(252, 8, 8));
+    border-radius:20%;
+}
+
+.disk-6 {
+    width: 100%;
+    background-image: linear-gradient(to right,rgb(165, 14, 9), rgb(233, 225, 123),rgb(165, 14, 9));
+    border-radius:20%;
+}
+
+.selected>div:first-of-type {
+    transform: translate(0, -100%);
+}
